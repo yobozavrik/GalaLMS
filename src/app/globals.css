@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+a {
+  @apply text-primary-600;
+}
+
+a:hover {
+  @apply text-primary-700;
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-2 max-w-3xl text-lg text-slate-600;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg;
+}
